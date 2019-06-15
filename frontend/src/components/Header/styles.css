@@ -1,0 +1,48 @@
+.header{
+    background: #CACACA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+
+    max-height:  15%;
+}
+
+.header img{
+    width: 15%;
+    margin-right: 50%;
+}
+
+.header ul{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    justify-content: space-around;
+
+}
+
+.header ul li:not(last-of-type) {
+   margin-left: 2rem;
+   font-size: 18px;
+   font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+a:visited{
+    color: #252525;   
+    text-decoration: none;
+}
+
+a:hover{
+    transition: all ease 0.2s;
+    color: white;
+    cursor: pointer;
+}
