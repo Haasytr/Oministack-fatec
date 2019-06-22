@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route  } from 'react-router-dom'
 import './style.css'
+import Footer from './components/Footer'
 
 // Pages
 import Home from './pages/Home'
@@ -17,6 +18,7 @@ const App = () =>
       <Navbar />
       <Route path="/" exact component={Home} />
       <Route path="/products" component={Products} />
+      <Footer />
     </Router>
   </>
 

@@ -1,0 +1,12 @@
+.list-container {
+    width: 70%;
+    border: 3px solid #252525;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ListItem {
+    width: 200px;
+}

@@ -1,10 +1,20 @@
 import React from 'react';
 import './style.css'
-import Header from  '../../components/Header'
+import Map from  '../../components/Map'
+import List from  '../../components/List'
+
 
 const Home = () => (
     <>
-        <h1>Bem vindo a Home</h1>
+        <div className='container'>
+            <div className='title'>
+                <h1>Bem vindo a Marivest</h1>
+            </div>
+            
+            <Map />
+            <List />
+        </div>
+        
     </>
 )
 
