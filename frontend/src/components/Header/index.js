@@ -8,8 +8,8 @@ const Header = () => (
                 <img src="http://marivest.com/wp-content/uploads/2016/05/Marivest-Marijuana-and-Cannabis-Investments-Funding-Capital.png" className='brand' />
                 <ul>
                     <li><Link to='/'>Home</Link></li>
-                    <li><Link to='#'>Contato</Link></li>
-                    <li><Link to='#'>Sobre</Link></li>
+                    <li><Link to='/contact'>Contato</Link></li>
+                    <li><Link to='/about'>Sobre</Link></li>
                     <li><Link to='/products'>Produto</Link></li>
                 </ul>
         </header>

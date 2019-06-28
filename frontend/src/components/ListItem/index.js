@@ -5,11 +5,11 @@ import './styles.css';
 const ListItem = (props) => {
     const { products } = props
     return products.map(product => ( 
-        <div className='ListItem' key={product.id}>
+        <div className='ListItem overlay' key={product.id}>
             <img src={product.image} />
             <h3>{product.name}</h3>
             <p>{product.description}</p>
-            <span>R${product.price}</span>
+            <span className='span'>R${product.price}</span>
         </div>   
         ))
 };

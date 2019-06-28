@@ -25,7 +25,7 @@ const readOne = async (req, res) => {
         const product = await Product.findOne({_id:id})
 
         res.send({product, success: true})
-    }catch{
+    }catch(error) {
         res.status(400).send({ message: error.message, success: false })
     }
 }
@@ -36,7 +36,7 @@ const update = async (req, res) => {
         const product = await Product.findOneAndUpdate({_id:id}, req.body, {new: true})
 
         res.send({product, success: true})
-    }catch{
+    }catch(error) {
         res.status(400).send({ message: error.message, success: false })
     }
 }
@@ -47,7 +47,7 @@ const destroy = async (req, res) => {
         const product = await Product.findByIdAndRemove({_id:id})
 
         res.send({success: true})
-    }catch{
+    }catch(error){
         res.status(400).send({ message: error.message, success: false })
     }
 }

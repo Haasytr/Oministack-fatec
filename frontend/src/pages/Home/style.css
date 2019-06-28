@@ -43,3 +43,10 @@
 .container .title h1{
     font-size: 6rem;
 }
+
+.destaques {
+    width: 70%;
+    font-size: 24px;
+    text-align: left;
+    color: #304352;
+}

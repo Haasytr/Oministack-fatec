@@ -1,13 +1,18 @@
-.container {
+.products .ListItem {
+    border: 3px solid #c3c3c3;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.nextPage{
     width: 100%;
-    height: 100vh;
-   
+    text-align: right;
 }
 
-.products{
-    
-}
-
-.product{
-    margin: 
+.nextPage button{
+    border-radius: 15px;
+    padding: 12px;
+    background: #252525;
+    color: #fff;
+    font-size: 18px;
 }

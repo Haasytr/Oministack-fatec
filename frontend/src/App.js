@@ -6,6 +6,8 @@ import Footer from './components/Footer'
 // Pages
 import Home from './pages/Home'
 import Products from './pages/Product'
+import About from './pages/About'
+import Contact from './pages/Contact/index'
 
 // Components
 import Navbar from './components/Header'
@@ -18,6 +20,8 @@ const App = () =>
       <Navbar />
       <Route path="/" exact component={Home} />
       <Route path="/products" component={Products} />
+      <Route path="/about" component={About} />
+      <Route path="/contact" component={Contact} />
       <Footer />
     </Router>
   </>

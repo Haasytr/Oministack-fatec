@@ -1,0 +1,54 @@
+.right{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.right form{
+    padding: 50px;
+}
+
+.right form label{
+    width: 100%;
+}
+
+textarea:focus, input:focus, select:focus, textearea, input {
+    box-shadow: 0 0 0 0;
+    border: none;
+    outline: 0;
+} 
+
+
+
+.right form  input, textarea{
+    box-shadow: none;   
+    resize: vertical;
+    border: none;
+    background: #ededed;
+    border-radius: 15px;
+    width: 100%;
+    padding: 25px;
+    margin: 15px 0;
+    height: 10px; 
+}
+
+textarea{
+    height: auto;
+}
+
+.left p{
+    font-size: 18px;
+    padding: 20px;
+}
+
+.right form button{
+    width: 150px;
+    height: 50px;
+    border: 1px solid #252525;
+    background: #252525;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 18px;
+
+}

@@ -12,7 +12,7 @@ const Map = ()  =>  {
     }
   };
     return (
-        <ReactMapGL style={{ marginBottom: 50 }}
+        <ReactMapGL style={{ marginBottom: 10 }}
         {...state.viewport} 
         mapboxApiAccessToken = "pk.eyJ1IjoiaGFhc3R5ciIsImEiOiJjang3dGI4MWkwZGtiM29xYjQ2anBqcjJiIn0.s_sQ_CPRUvanfVqUnLDKiw"
         />

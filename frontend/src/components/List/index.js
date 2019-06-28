@@ -10,7 +10,8 @@ const List = () => {
     function getProducts() {
         axios.get('http://localhost:3001/api/product')
             .then(response => {
-                setProducts(response.data.products) 
+                const products = response.data.products.slice(-4)
+                setProducts(products) 
             })
     }
 
