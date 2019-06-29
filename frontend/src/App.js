@@ -10,6 +10,7 @@ import About from './pages/About'
 import Contact from './pages/Contact/index'
 
 // Components
+import ViewProduct from './components/ViewProduct'
 import Navbar from './components/Header'
 
 const App = () => 
@@ -22,6 +23,7 @@ const App = () =>
       <Route path="/products" component={Products} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
+      <Route path="/product/:id" component={ViewProduct} />
       <Footer />
     </Router>
   </>

@@ -8,21 +8,21 @@ const contact = () =>
             <h1 className='title'>Vamos conversar?</h1>
             <div className='content' style={{width: '100%'}}>
                 <div className='right'>
-                    <form>
+                    <form method='post' action='http://localhost:3001/api/product'>
                         <label>
-                            <input type='text' placeholder='Nome Completo'/>
+                            <input name='name' type='text' placeholder='Nome Completo'/>
                         </label>
 
                         <label>
-                            <input type='email' placeholder='Email'/>
+                            <input name='price' type='price' placeholder='preço'/>
                         </label>
 
                         <label>
-                            <input type='text' placeholder='Assunto do email'/>
+                            <input name='description' type='text' placeholder='Descrição'/>
                         </label>
 
                         <label>
-                            <textarea placeholder='Mensagem' row='5' /> 
+                            <textarea name='image' placeholder='Url' row='5'/> 
                         </label>
                         <button type='submit'>Enviar</button>
                     </form>

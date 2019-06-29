@@ -12,6 +12,7 @@ const List = () => {
             .then(response => {
                 const products = response.data.products.slice(-4)
                 setProducts(products) 
+                console.log(products)
             })
     }
 

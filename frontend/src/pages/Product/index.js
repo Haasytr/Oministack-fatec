@@ -8,11 +8,13 @@ import { wrap } from 'module';
 
 const Product = () => {
     const [products, setProducts] = useState([]);
+    const [countSlice, setCounterSlice] = useState(-6);
+
 
     function getProducts() {
         axios.get('http://localhost:3001/api/product')
             .then(response => {
-                const products = response.data.products.slice(-6)
+                const products = response.data.products
                 setProducts(products) 
             })
     }
@@ -27,11 +29,11 @@ const Product = () => {
                 
 
                 <div className='products' style={{display: 'flex', marginTop: '10%', alignItems: 'flex-start', justifyContent: 'space-around', flexDirection: 'row', flexWrap: 'wrap', width: '100%', height: '100%'}}>
-                    <ListItem className='product'products={products}/>
+                    <ListItem className='product'products={products} countSlice={countSlice} />
                 </div>
 
                 <div className='nextPage'>
-                    <button>Ver mais produtos! -></button>
+                    <button onClick={() => setCounterSlice(countSlice - 1)}>Ver mais produtos! -></button>
                 </div>
             </div>
         </>
